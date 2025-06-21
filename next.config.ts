@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true
+  },
+  eslint: {
+    ignoreDuringBuilds: false,
+    dirs: ['src']
   }
 };
 
