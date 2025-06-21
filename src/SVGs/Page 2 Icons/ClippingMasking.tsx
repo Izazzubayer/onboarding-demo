@@ -1,0 +1,15 @@
+import React from 'react';
+
+const ClippingMasking: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <mask id="mask0_195_1365" style={{maskType:'luminance'}} maskUnits="userSpaceOnUse" x="1" y="1" width="30" height="31">
+      <path d="M15.9993 29.8334C23.3633 29.8334 29.3327 23.864 29.3327 16.5C29.3327 9.13602 23.3633 3.16669 15.9993 3.16669C8.63535 3.16669 2.66602 9.13602 2.66602 16.5C2.66602 23.864 8.63535 29.8334 15.9993 29.8334Z" stroke="white" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M16 29.8333C21.97 29.8333 27.024 25.9093 28.7227 20.5H3.27734C4.97601 25.9093 10.03 29.8333 16 29.8333Z" fill="#555555" stroke="white" strokeWidth="2.66667" strokeLinecap="round" strokeLinejoin="round"/>
+    </mask>
+    <g mask="url(#mask0_195_1365)">
+      <path d="M0 0.5H32V32.5H0V0.5Z" fill="#34A853"/>
+    </g>
+  </svg>
+);
+
+export default ClippingMasking; 
