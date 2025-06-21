@@ -1,11 +1,6 @@
 'use client';
-import React, { useState } from 'react';
-import BackgroundRemoval from '../SVGs/Page 2 Icons/BackgroundRemoval';
-import ClippingMasking from '../SVGs/Page 2 Icons/ClippingMasking';
-import GhostMannequin from '../SVGs/Page 2 Icons/GhostMannequin';
-import BatchProcessing from '../SVGs/Page 2 Icons/BatchProcessing';
-import ImageEnhancement from '../SVGs/Page 2 Icons/ImageEnhancement';
-import { ArrowLeft, ArrowRight, Video, Palette, AudioLines, Film, Gauge, FastForward, Eraser, Scissors, Ghost, Layers, Sparkles, PackageCheck, Lightbulb, Box, ScanSearch, Wrench, Scale3d, Globe2, Rotate3D, Building2, Waves } from 'lucide-react';
+import React from 'react';
+import { ArrowLeft, ArrowRight, Video, Palette, AudioLines, Film, Gauge, FastForward, Eraser, Scissors, Ghost, Layers, Sparkles, PackageCheck, Lightbulb, Box, Scale3d, Globe2, Rotate3D, Building2, Waves } from 'lucide-react';
 
 interface OnboardingStep2Props {
   selectedService: string;

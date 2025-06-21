@@ -20,14 +20,14 @@ interface OnboardingFormProps {
 }
 
 const OnboardingForm: React.FC<OnboardingFormProps> = ({ form, setForm, onContinue }) => {
-  const [errors, setErrors] = useState<any>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
   const validate = () => {
-    const errs: any = {};
+    const errs: Record<string, string> = {};
     if (!form.fullName) errs.fullName = "Required";
     if (!form.phone) {
       errs.phone = "Required";
@@ -65,8 +65,8 @@ const OnboardingForm: React.FC<OnboardingFormProps> = ({ form, setForm, onContin
       onSubmit={handleSubmit}
       className="bg-white rounded-2xl shadow-sm px-4 sm:px-8 md:px-12 py-8 sm:py-10 md:py-12 w-full max-w-2xl mx-auto flex flex-col gap-6"
     >
-      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-black">Let's Get Started</h2>
-      <p className="text-black mb-6 text-base sm:text-lg font-medium">Share your project details with us through this streamlined onboarding process. We'll gather everything needed to deliver exceptional creative solutions.</p>
+      <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-black">Let&apos;s Get Started</h2>
+      <p className="text-black mb-6 text-base sm:text-lg font-medium">Share your project details with us through this streamlined onboarding process. We&apos;ll gather everything needed to deliver exceptional creative solutions.</p>
       <div className="flex flex-col gap-4">
         <label className="font-semibold text-black text-sm sm:text-base flex items-center gap-2" htmlFor="fullName">
           <User size={18} className="text-gray-500" /> Full Name

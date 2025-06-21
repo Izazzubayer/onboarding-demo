@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState, useEffect } from 'react';
-import { UploadCloud, Box, Server, ArrowLeft, Send, ClipboardList, CheckCircle } from 'lucide-react';
+import { UploadCloud, ArrowLeft, ClipboardList, CheckCircle } from 'lucide-react';
 
 interface OnboardingStep3Props {
   sop: string;
@@ -105,7 +105,7 @@ const OnboardingStep3: React.FC<OnboardingStep3Props> = ({ sop, setSop, testFile
       {activeTab === 'test' && (
         <div className="w-full max-w-4xl mb-8">
           <h3 className="text-xl md:text-2xl font-bold mb-2">Upload Test & Target Work</h3>
-          <p className="text-black mb-6 text-base font-medium">Kindly upload the files you'd like us to work on, and share a sample or demo of the desired final output.</p>
+          <p className="text-black mb-6 text-base font-medium">Kindly upload the files you&apos;d like us to work on, and share a sample or demo of the desired final output.</p>
 
           {/* File Method Selection */}
           <div className="mb-6">
@@ -282,7 +282,7 @@ const OnboardingStep3: React.FC<OnboardingStep3Props> = ({ sop, setSop, testFile
                 <CheckCircle size={72} color="#22c55e" />
               </div>
             </div>
-            <div className="pt-12 pb-2 px-2 text-lg font-bold text-gray-900 text-center tracking-tight">Thank you! We've received your files and will be in touch shortly.</div>
+            <div className="pt-12 pb-2 px-2 text-lg font-bold text-gray-900 text-center tracking-tight">Thank you! We&apos;ve received your files and will be in touch shortly.</div>
           </div>
         </div>
       )}

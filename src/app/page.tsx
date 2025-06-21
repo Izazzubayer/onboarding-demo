@@ -1,6 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
-import Image from "next/image";
+import React, { useState } from 'react';
 import HeroSection from "../components/HeroSection";
 import Stepper from "../components/Stepper";
 import OnboardingForm from "../components/OnboardingForm";
