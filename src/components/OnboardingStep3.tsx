@@ -33,16 +33,6 @@ const OnboardingStep3: React.FC<OnboardingStep3Props> = ({ sop, setSop, testFile
     if (e.target.files) setFiles(Array.from(e.target.files));
   };
 
-  const handleSend = () => {
-    // Here you would handle routing files based on fileTransferMethod
-    // For now, just log the method and files
-    console.log('Preferred File Transfer Method:', fileMethod);
-    console.log('Test Files:', testFiles);
-    console.log('Output Files:', outputFiles);
-    setShowConfirmation(true);
-    if (onReview) onReview();
-  };
-
   useEffect(() => {
     if (showConfirmation) {
       const timer = setTimeout(() => setShowConfirmation(false), 6000);
